@@ -1,0 +1,21 @@
+<!doctype html>
+<html ng-app="tipApp">
+  <head>
+  <title>Tip Cal</title>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <script src="assets/js/angular.min.js"></script>
+  <script src="assets/js/angular-route.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <script src="controllers/homeController.js"></script>
+  </head>
+  <body>
+
+    <nav class="text-center">
+      <a href="#/">Tip Cal</a> &nbsp;
+      <a href="#/split-bill">SplitBill</a>
+    </nav>
+
+    <div ng-view></div>
+
+  </body>
+</html>

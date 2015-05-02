@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-offset-4 col-md-3">
+      <form>
+        <div class="form-group">
+          <h2>Spilt Bill Cal</h2>
+          <input type='text' class="form-control" placeholder="Enter Tip Amount" ng-model="amount2" />
+        </div>
+
+        <div class="form-group">
+          <input type="number" name="quantity" min="1" max="100" ng-model="peopleAmount">
+        </div>
+
+        <div class="form-group">
+          <select ng-model="selectTip" ng-options="percent.tip for percent in percents"></select>
+        </div>
+      </form>
+
+
+      <p>Tip Per Person: {{ billAmount() * selectTip.tipPercent / peopleNumber() | currency }}</p>
+      <p>Total Per Person: {{ (billAmount() / peopleNumber()) + (billAmount() * selectTip.tipPercent / peopleNumber())| currency }}</p>
+      <p>{{ test }}</p>
+    </div>
+  </div>
+</div>
