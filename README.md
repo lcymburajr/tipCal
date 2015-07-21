@@ -1,2 +1,2 @@
 # Tip Cal
-Just messing around with Angular and Node
+Playing around with Angular and Node.
